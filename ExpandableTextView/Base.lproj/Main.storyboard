@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ExpandableTextView" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +17,74 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ium-SC-spG" customClass="ExpandableTextView" customModule="ExpandableTextView" customModuleProvider="target">
+                                <rect key="frame" x="20" y="274" width="560" height="52"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="250" constant="52" id="5Ue-6a-Ugk"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WwS-ch-VGx" customClass="ExpandableTextView" customModule="ExpandableTextView" customModuleProvider="target">
+                                <rect key="frame" x="20" y="196" width="560" height="52"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="250" constant="52" id="A3p-Mm-jG3"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yyy-ww-dff" customClass="ExpandableTextView" customModule="ExpandableTextView" customModuleProvider="target">
+                                <rect key="frame" x="20" y="345" width="560" height="52"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="250" constant="52" id="45r-1o-u9X"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yyy-ww-dff" firstAttribute="leading" secondItem="ium-SC-spG" secondAttribute="leading" id="6pi-SU-b7m"/>
+                            <constraint firstItem="ium-SC-spG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="72U-fd-zGv"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ium-SC-spG" secondAttribute="bottom" constant="277" id="9Ie-nc-6l8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yyy-ww-dff" secondAttribute="trailing" id="B4Q-BP-M6Q"/>
+                            <constraint firstItem="yyy-ww-dff" firstAttribute="top" secondItem="ium-SC-spG" secondAttribute="bottom" constant="19" id="CA1-FO-ZUB"/>
+                            <constraint firstItem="ium-SC-spG" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Ok1-83-E7U"/>
+                            <constraint firstItem="ium-SC-spG" firstAttribute="top" secondItem="WwS-ch-VGx" secondAttribute="bottom" constant="26" id="Pr2-5O-6Ss"/>
+                            <constraint firstItem="ium-SC-spG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Rln-Gp-EBh"/>
+                            <constraint firstItem="ium-SC-spG" firstAttribute="top" secondItem="WwS-ch-VGx" secondAttribute="bottom" constant="26" id="TdS-BF-4KV"/>
+                            <constraint firstItem="ium-SC-spG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="UOJ-ZS-o4Z"/>
+                            <constraint firstItem="yyy-ww-dff" firstAttribute="centerX" secondItem="ium-SC-spG" secondAttribute="centerX" id="a3b-Ka-Yo5"/>
+                            <constraint firstItem="WwS-ch-VGx" firstAttribute="trailing" secondItem="ium-SC-spG" secondAttribute="trailing" id="bBB-q4-G6b"/>
+                            <constraint firstItem="WwS-ch-VGx" firstAttribute="leading" secondItem="ium-SC-spG" secondAttribute="leading" id="eC0-nh-F1k"/>
+                            <constraint firstItem="ium-SC-spG" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="233" id="eFe-ZL-4hc"/>
+                            <constraint firstItem="yyy-ww-dff" firstAttribute="trailing" secondItem="ium-SC-spG" secondAttribute="trailing" id="gPd-kZ-Mxx"/>
+                            <constraint firstItem="ium-SC-spG" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="233" id="qDr-RH-MTw"/>
+                            <constraint firstItem="yyy-ww-dff" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="rDf-TG-zQZ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="yyy-ww-dff" secondAttribute="bottom" constant="203" id="sR2-pr-CRm"/>
+                            <constraint firstItem="WwS-ch-VGx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="176" id="yOB-NL-UYx"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="yOB-NL-UYx"/>
+                                <exclude reference="TdS-BF-4KV"/>
+                                <exclude reference="eFe-ZL-4hc"/>
+                                <exclude reference="qDr-RH-MTw"/>
+                                <exclude reference="B4Q-BP-M6Q"/>
+                                <exclude reference="a3b-Ka-Yo5"/>
+                                <exclude reference="rDf-TG-zQZ"/>
+                                <exclude reference="9Ie-nc-6l8"/>
+                                <exclude reference="sR2-pr-CRm"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="bottomView" destination="yyy-ww-dff" id="Kja-Xd-Ps8"/>
+                        <outlet property="middleView" destination="ium-SC-spG" id="SA6-nR-cs7"/>
+                        <outlet property="topView" destination="WwS-ch-VGx" id="JgR-LD-xwQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="245" y="305"/>
         </scene>
     </scenes>
 </document>

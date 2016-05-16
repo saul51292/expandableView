@@ -14,6 +14,9 @@
 		C74FB7421CE6190800D1BBBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C74FB7401CE6190800D1BBBB /* LaunchScreen.storyboard */; };
 		C74FB74D1CE6190800D1BBBB /* ExpandableTextViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74FB74C1CE6190800D1BBBB /* ExpandableTextViewTests.swift */; };
 		C74FB7581CE6190800D1BBBB /* ExpandableTextViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74FB7571CE6190800D1BBBB /* ExpandableTextViewUITests.swift */; };
+		C74FB7661CE619B000D1BBBB /* ExpandableTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74FB7651CE619B000D1BBBB /* ExpandableTextView.swift */; };
+		C773926A1CEA1B5F00E5B1E0 /* ExpandableText.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77392691CEA1B5F00E5B1E0 /* ExpandableText.swift */; };
+		C7F92EFF1CE6462200F683F7 /* ExpandableTextView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7F92EFE1CE6462200F683F7 /* ExpandableTextView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		C74FB7531CE6190800D1BBBB /* ExpandableTextViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExpandableTextViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C74FB7571CE6190800D1BBBB /* ExpandableTextViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableTextViewUITests.swift; sourceTree = "<group>"; };
 		C74FB7591CE6190800D1BBBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C74FB7651CE619B000D1BBBB /* ExpandableTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpandableTextView.swift; sourceTree = "<group>"; };
+		C77392691CEA1B5F00E5B1E0 /* ExpandableText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpandableText.swift; sourceTree = "<group>"; };
+		C7F92EFE1CE6462200F683F7 /* ExpandableTextView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExpandableTextView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,9 @@
 			children = (
 				C74FB7371CE6190800D1BBBB /* AppDelegate.swift */,
 				C74FB7391CE6190800D1BBBB /* ViewController.swift */,
+				C74FB7651CE619B000D1BBBB /* ExpandableTextView.swift */,
+				C77392691CEA1B5F00E5B1E0 /* ExpandableText.swift */,
+				C7F92EFE1CE6462200F683F7 /* ExpandableTextView.xib */,
 				C74FB73B1CE6190800D1BBBB /* Main.storyboard */,
 				C74FB73E1CE6190800D1BBBB /* Assets.xcassets */,
 				C74FB7401CE6190800D1BBBB /* LaunchScreen.storyboard */,
@@ -229,6 +238,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7F92EFF1CE6462200F683F7 /* ExpandableTextView.xib in Resources */,
 				C74FB7421CE6190800D1BBBB /* LaunchScreen.storyboard in Resources */,
 				C74FB73F1CE6190800D1BBBB /* Assets.xcassets in Resources */,
 				C74FB73D1CE6190800D1BBBB /* Main.storyboard in Resources */,
@@ -256,7 +266,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C773926A1CEA1B5F00E5B1E0 /* ExpandableText.swift in Sources */,
 				C74FB73A1CE6190800D1BBBB /* ViewController.swift in Sources */,
+				C74FB7661CE619B000D1BBBB /* ExpandableTextView.swift in Sources */,
 				C74FB7381CE6190800D1BBBB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -484,6 +496,7 @@
 				C74FB75E1CE6190800D1BBBB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C74FB75F1CE6190800D1BBBB /* Build configuration list for PBXNativeTarget "ExpandableTextViewTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +505,7 @@
 				C74FB7611CE6190800D1BBBB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C74FB7621CE6190800D1BBBB /* Build configuration list for PBXNativeTarget "ExpandableTextViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +514,7 @@
 				C74FB7641CE6190800D1BBBB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
